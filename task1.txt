@@ -1,0 +1,10 @@
+Given a list of numbers, calculate and return their sum.
+
+SOLUTION:
+BEGIN
+ INTIALIZES A VARIABLE TOTAL TO 0
+ FOR EACH ELEMENT IN THE list
+    SUM TOTAL TO ELEMENT
+ END FOR 
+ return TOTAL
+END
