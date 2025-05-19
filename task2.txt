@@ -1,0 +1,11 @@
+Find if a target number exists in a list and return its index. If not found, return -1.
+
+BEGIN
+   for x From 0 to lenght of list-1
+      if list[x] == target
+        return x
+      end if
+    end for
+    return -1
+END    
+  
