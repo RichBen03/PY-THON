@@ -11,6 +11,7 @@ i=0
 while i < len(list1):
     j=0
     while j < len(list2):
-        print(list1[i],list2[j])
+        print(list1[i],list2[j], end="\t")
         j+=1
+    print()
     i+=1
