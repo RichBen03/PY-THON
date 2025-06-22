@@ -17,6 +17,8 @@ class GuideDog(Labrador):
 class German:
     def greet(self):
         print('German Dog says Hello')
+
+# Initializing the multiple inheritance where Germany inherits from German and Dog classes
 class Germany(German,Dog):
     def sound(self):
         print("German Dog barks")
