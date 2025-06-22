@@ -37,5 +37,7 @@ germans.display()
 germans.greet()
 germans.sound()
     
-
+# Single Inheritance = labrador inherits from Dog class
+# Mulitilevel Inheritance = GuideDog inherits from Labrador where Labrador inherits from dog
+# Multiple Inheritance = German inherits from Germany and Dog classes
         
