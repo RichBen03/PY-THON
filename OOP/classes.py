@@ -1,30 +1,38 @@
-class Dog:
-    # intializes the class variable
-    species = "German Shephard"
+class Person:
+    # A class attribute
+    species="Homo Sapiens"
 
-    # intializing the object attributes
-    # self parameter references the current instance
-    def __init__(self, name,age):
+    # A constructor used to intialize attributes of the class
+    # name and gender are parameters
+    def __init__(self,name,gender):
+        # Instance attributes
+        self.name=name
+        self.gender=gender
+    # a method to return a string representation of the object
+    def __str__(self):
+        return f"{self.name} is a {self.gender}"
+    def __del__(self):
+        return f"Deleting {self.name} from memory"
+    
+# Creating an object which is the instance of the class
+# Init function is intialized and the attributes are initialized
+person1 = Person("Rich", "Male")
+print(person1) # Automatically calls the str method to return the string representation of the object
 
-        # intializing the instance variable
-        self.name = name
-        self.age = age
 
-# Creating objects, the objects have attributes
-dog1 = Dog("Maddy", 2)
-dog2 = Dog("Ken", 3)
+# Accessing the attributes 
+print(person1.name) #instance attribute
+print(person1.gender)#instance attribute
+print(person1.species)#class attribute
 
-print(dog1.name, dog1.age)
-print(dog2.name,dog2.age)
+# Modifying attributes
+print("\n")
+print(f"The initial value for the person name was {person1.name}")
+person1.name = "Max"
+print(f"After modification the name was changed to {person1.name}")
 
-# Modifying the instance variable
-print("Changing dog1's name",end="\n")
-dog1.name = "bill"
-print(dog1.name)
+del person1
 
-# Modifying the class variable
-Dog.species= "Wolf"
-print("Class variable is", Dog.species)
-print(dog1.species)
-print(dog2.species)
-
+print(person1)
+        
+        
